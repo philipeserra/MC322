@@ -37,6 +37,10 @@ public class Componente {
 		this.alive = false;
 	}
 	
+	public void setAlive(boolean alive) {
+		this.alive = alive;
+	}
+	
 	public String getType() {
 		return this.componentType;
 	}
@@ -48,4 +52,6 @@ public class Componente {
 	public Caverna getCaverna() {
 		return this.caverna;
 	}
+	
+	public void spreadAlert() {};
 }

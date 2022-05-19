@@ -12,11 +12,11 @@ public class Controle {
 	}
 	
 	public void equipArrow() {
-		this.heroi.setArrow(true);
+		this.heroi.setArrowEquiped(true);
 	}
 	
 	public void collectGold() {
-		this.heroi.setGold(true);
+		this.heroi.collectGold(true);
 	}
 	
 	public void quitGame() {
@@ -33,33 +33,35 @@ public class Controle {
 			
 			case 'k':
 				this.equipArrow();
-				break;
+				return;
 				
 			case 'c':
 				this.collectGold();
-				break;
+				return;
 				
 			case 'q':
 				this.quitGame();
-				break;
-				
-			case 'w':
-				this.setPlayerPosition(x, y-1); //O programa processa y crescendo para baixo
-				break;
-				
-			case 's':
-				this.setPlayerPosition(x, y+1);
-				break;
-				
-			case 'd':
-				this.setPlayerPosition(x+1, y);
-				break;
+				return;
 				
 			case 'a':
+				this.setPlayerPosition(x, y-1); //O programa processa y crescendo para baixo
+				return;
+				
+			case 'd':
+				this.setPlayerPosition(x, y+1);
+				return;
+				
+			case 's':
+				this.setPlayerPosition(x+1, y);
+				return;
+				
+			case 'w':
 				this.setPlayerPosition(x-1, y);
-				break;
+				return;
 				
 			}
+			
+			System.out.println("Tecla invalida");
 		}
 		
 	}
