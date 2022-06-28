@@ -1,0 +1,28 @@
+Player 0 0 12
+Energia 0 2 5
+Energia 0 3 5
+Energia 3 0 5
+Energia 2 0 5
+Porta 0 5 false
+Caixa 4 0
+Alavanca 6 0 0 5
+END
+0 0 CelulaPadrao
+0 1 CelulaPadrao
+0 2
+0 3
+0 4
+0 5
+0 6
+0 7
+0 8
+0 9
+0 10 Saida
+1 0 
+2 0
+3 0
+4 0
+5 0 PisoAcionador 0 5
+6 0
+7 0
+END

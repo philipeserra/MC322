@@ -1,0 +1,6 @@
+Player 0 0 12
+END
+0 0 CelulaPadrao
+0 1
+0 2 Saida
+END

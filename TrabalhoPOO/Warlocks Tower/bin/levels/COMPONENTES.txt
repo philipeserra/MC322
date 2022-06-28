@@ -1,0 +1,9 @@
+Energia:
+(int)x (int)y (int)quantidadeDeEnergia
+
+Porta:
+(int)x (int)y (boolean)aberta
+
+Alavanca:
+(int)x (int)y (int)xDoPrimeiroAtivavel (int)yDoPrimeiroAtivavel (int)xDoSegundoAtivavel (int)yDoSegundoAtivavel ...
+Todos os ativaveis que serão atribuidos a essa alavanca devem ser declarados primeiro que a própria alavanca.
