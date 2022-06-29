@@ -56,7 +56,10 @@ public class Dungeon extends JPanel implements ActionListener, KeyListener{
 		
 		controlador = new Controlador(player);
 		
-		energyBoard = new JLabel(""+player.getEnergy());
+		energyBoard = new JLabel("Energia: "+player.getEnergy());
+		Font f = new Font("Lato", Font.PLAIN, 18);
+		energyBoard.setForeground(Color.white);
+		energyBoard.setFont(f. deriveFont(f. getStyle() | Font. BOLD));
 		this.add(energyBoard);
 		
 		timer = new Timer(DELAY, this);
@@ -117,7 +120,7 @@ public class Dungeon extends JPanel implements ActionListener, KeyListener{
 			this.dungeonConcluded();
 		}
 		
-		energyBoard.setText(""+ player.getEnergy());
+		energyBoard.setText("Energia: "+player.getEnergy());
 		
 		repaint();
 		
