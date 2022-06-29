@@ -1,0 +1,41 @@
+Player 5 1 11
+Porta 3 6 false
+Porta 7 6 false
+Porta 5 8 true
+Porta 5 9 false
+Caixa 2 6
+Alavanca 4 1 3 6 5 8
+Alavanca 6 1 7 6
+Energia 9 6 40
+END
+4 0
+6 0
+4 1
+6 1
+4 2
+6 2
+5 0
+5 1
+5 2
+5 3
+5 4
+4 5
+6 5
+4 6
+6 6
+4 7
+6 7
+5 5
+5 6
+3 6
+2 6
+1 6 PisoAcionador 5 9
+7 6
+8 6
+9 6
+5 7
+5 8
+5 9
+5 10
+5 11 Saida
+END
