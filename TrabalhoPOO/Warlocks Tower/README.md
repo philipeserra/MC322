@@ -4,8 +4,8 @@ Em Warlock’s Tower 2, o jogador deve completar puzzles para encontrar a saída
 
 ## Equipe
 
-# Philipe Medeiros Serra - 247339
-# Henrique Meneguetti Bianchi - 217802
+#### Philipe Medeiros Serra - 247339
+#### Henrique Meneguetti Bianchi - 217802
 
 ## Arquivo executável
 
