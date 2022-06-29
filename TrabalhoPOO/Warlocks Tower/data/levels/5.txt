@@ -1,4 +1,4 @@
-Player 0 0 5
+Player 0 0 8
 Porta 1 2 false
 Porta 3 2 false
 Porta 5 4 false
@@ -6,14 +6,14 @@ Porta 1 7 false
 Porta 2 10 true
 Alavanca 1 0 1 2
 Alavanca 3 7 1 7 2 10
-Caixa 3 5
-Caixa 5 1
-Energia 1 4 3
-Energia 4 6 5 
-Energia 4 2 5
-Energia 6 3 3
-Energia 6 8 5
-Energia 1 8 5
+Caixa 2 4
+Caixa 4 0
+Energia 0 3 5
+Energia 3 5 5 
+Energia 3 1 5
+Energia 5 2 3
+Energia 5 5 5
+Energia 0 7 8
 END
 0 0 
 0 1
@@ -33,8 +33,7 @@ END
 2 8
 2 9 
 2 10
-2 11
-2 12 Saida
+2 11 Saida
 3 0
 3 1
 3 2
@@ -45,7 +44,7 @@ END
 4 0
 4 1
 4 7
-5 0 PisoAcionador
+5 0 PisoAcionador 5 4
 5 1
 5 2
 5 3
@@ -53,5 +52,6 @@ END
 5 5
 5 6
 5 7
+END
 
 
