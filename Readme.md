@@ -11,4 +11,4 @@ RA 217802
 
 
 ## Trabalho POO 2022 - Warlock's Tower
-[ACESSE O TRABALHO POO 2022 CLICANDO AQUI]([https://github.com/philipeserra/MC322/tree/main/Lab05](https://github.com/philipeserra/MC322/tree/main/TrabalhoPOO/Warlocks%20Tower))
+[ACESSE O TRABALHO POO 2022 CLICANDO AQUI](https://github.com/philipeserra/MC322/tree/main/TrabalhoPOO/Warlocks%20Tower)
