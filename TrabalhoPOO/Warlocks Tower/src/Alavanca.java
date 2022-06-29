@@ -29,9 +29,9 @@ public class Alavanca extends Componente{
 	public void interactedByPlayer(Player player, ArrayList<Componente> componentes, Celula[][] celulas) {
 		this.puxada = !this.puxada;
 		if(this.puxada) {
-			loadImage("images/alavanca_para_baixo");
+			loadImage("images/alavanca_para_baixo.png");
 		}else {
-			loadImage("images/alavanca_para_cima");
+			loadImage("images/alavanca_para_cima.png");
 		}
 		
 		for(Activable ativavel: ativaveis) {
