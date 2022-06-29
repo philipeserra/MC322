@@ -12,7 +12,7 @@ public class Energia extends Componente{
 		}
 		else if(energia == 3)
 		{
-			loadImage("images/enegia3.png");
+			loadImage("images/energia3.png");
 			
 		}else {
 			loadImage("images/energia_misterio.png");
