@@ -15,7 +15,7 @@ public class Energia extends Componente{
 			loadImage("images/energia3.png");
 			
 		}else {
-			loadImage("images/energia_misterio.png");
+			loadImage("images/energia_misteriosa.png");
 		}
 		
 		this.energiaqtd = energia;
