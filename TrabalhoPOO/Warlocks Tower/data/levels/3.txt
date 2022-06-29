@@ -1,4 +1,3 @@
-//Tutorial para uso da Alavanca
 Player 5 5 5
 Porta 5 9 false
 Alavanca 5 7 5 9
