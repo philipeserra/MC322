@@ -1,4 +1,4 @@
-# Laboratório 5 e Projeto
+# Laboratório 5
 
 ## Alunos
 #### Philipe Medeiros Serra 
