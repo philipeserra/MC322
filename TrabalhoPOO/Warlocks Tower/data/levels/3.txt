@@ -1,0 +1,15 @@
+//Tutorial para uso da Alavanca
+Player 5 5 5
+Porta 5 9 false
+Alavanca 5 7 5 9
+Energia 5 10 5
+END
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 10
+6 11 Saida
+END
