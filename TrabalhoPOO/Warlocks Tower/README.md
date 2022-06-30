@@ -14,3 +14,5 @@ Em Warlock’s Tower 2, o jogador deve completar puzzles para encontrar a saída
 [Slides da versão final do jogo](https://docs.google.com/presentation/d/1QYKL5Xe0vi7EFR8pOVqEINFce5sySmCFuPCRmYeTAW8/edit?usp=sharing)
 
 ## Diagramas
+
+![Diagrama de Arquitetura Simplificado](https://drive.google.com/file/d/1FSgoOwhrZHn27q9tjII2BlHysD7Bpy4r/view?usp=sharing)
