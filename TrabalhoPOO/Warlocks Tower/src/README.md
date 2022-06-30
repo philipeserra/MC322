@@ -4,6 +4,7 @@
 Como construir uma Dungeon:
 
 Para começar na primeira linha insira o player com "Player x y Energia", onde x y é sua posicao e Energia é a quantidade de energia inicial.
+
 ex: Player 0 0 12
 
 Depois digite os componentes que serão inseridos no formato "NomeDoComponente x y ...OutrasVariaveisNecessarias" e por fim coloque END
