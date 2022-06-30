@@ -17,9 +17,9 @@ caso não haja nome ou o nome não exista no jogo, será inserido uma CelulaPadr
 
 caso não seja inserido uma coordenada x y válida o nível será considerado que foi inserido incorretamente.
 
-Quando digitar todas as celulas escreva um "END"
+Quando digitar todas as celulas escreva um "END".
 
-E por fim titule o arquivo como "[Número do Nível].txt"
+E por fim titule o arquivo como "[Número do Nível].txt".
 
 
 
