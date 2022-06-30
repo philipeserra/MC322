@@ -14,11 +14,8 @@ Caso não seja especificado corretamente, o componente não será inserido.
 ex:
 
 Energia 0 2 3
-
 Energia 0 3 5
-
 Porta 0 5 false
-
 Alavanca 5 0 0 5
 
 END
