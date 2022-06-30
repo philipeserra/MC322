@@ -17,6 +17,9 @@ Em Warlock’s Tower 2, o jogador deve completar puzzles para encontrar a saída
 
 ## Diagramas
 
+### Arquitetura Simplificada
 ![Diagrama de Arquitetura Simplificado](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/ArquiteturaSimplificada.png)
 
+
+### Arquitetura dos Componentes e Células Simplificadas
 ![Diagrama de Arquitetura Simplificado](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/ArquiteturaComponentesSimplificada.png)
