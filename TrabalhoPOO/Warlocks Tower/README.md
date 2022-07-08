@@ -137,7 +137,73 @@ Para o destaque de Pattern, será mostrado como foi utilizado o Strategy Pattern
 ## Código do Pattern
 Tanto a alavanca, como o piso acionador, recebem uma lista de Activable, que, como a tradução induz, uma lista de classes que podem ser ativadas. Como mostrado a seguir, a interface Activable possui dois métodos, nos quais serão declarados novamente dentro das classes para realizar o que se deseja caso a classe seja ativada ou desativada. Por conseguinte, o Strategy Pattern foi utilizado, pois não é necessário para a alavanca saber qual a classe que está sendo ativada para fazê-la agir da forma que queremos. o Strategy também foi usada na lógica de interação do player com os componentes e células, pois o player não precisa saber qual a classe do componente ou a classe da celula para fazermos as tais classes agirem da forma que queremos.
 
+~~~java
+	
+public class Alavanca extends Componente{
+	
+	private boolean puxada;
+	//Componentes que alavanca torna passable ou inpassable
+	private ArrayList<Activable> ativaveis;
+	...
+}
+~~~
+	
+~~~java
+public class PisoAcionador extends Celula{
+	private ArrayList<Activable> ativaveis;
+	private ArrayList<Boolean> estadosIniciais;
+	
+	...
+	
+	public void interact(Player player, ArrayList<Componente> componentes, Celula[][] celulas) {
+		if(player.getX() == this.x && player.getY() == this.y) {
+			for(int i = 0; i < ativaveis.size(); i++) {
+				this.ativaveis.get(i).setActivabled(!this.estadosIniciais.get(i));
+			}
+			return;
+		}
+		
+		for(Componente componente: componentes) {
+			if(componente.getX() == this.x && componente.getY() == this.y) {
+				for(int i = 0; i < ativaveis.size(); i++) {
+					this.ativaveis.get(i).setActivabled(!this.estadosIniciais.get(i));
+				}
+				return;
+			}
+		}
+		
+		for(int i = 0; i < ativaveis.size(); i++) {
+			this.ativaveis.get(i).setActivabled(this.estadosIniciais.get(i));
+		}
+		
+	}
+}
+	
+~~~
+~~~java
+public class Porta extends Componente implements Activable{
+	...
+	@Override
+	public boolean getActivabled() {
+		// TODO Auto-generated method stub
+		return passable;
+	}
 
+	@Override
+	public void setActivabled(boolean activabled) {
+		this.passable = activabled;
+		
+		if(!this.passable) {
+			loadImage("images/porta_aberta.png");
+		}
+		else {
+			loadImage("images/porta_fechada.png");
+		}
+	}
+
+}	
+~~~
+	
 # Conclusões e Trabalhos Futuros
 
 # Documentação dos Componentes
