@@ -83,6 +83,50 @@ No destaque de Orientação a Objetos, será apresentado como foi usado o polimo
 ![Diagrama de interação com Player](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/InteracaoComPlayerDiagrama.png)
 
 ## Código do Destaque OO
+Como há diferentes tipos de componentes (entre eles Porta, Alavanva, Caixa...) e vários tipos de células (CelulaPadrao, Saida...) foi usado o polimorfismo, onde todas essas classes que representam componentes são herdeiras de uma classe abstrata chamada Componente e todas as classes que representam células são herdeiras de uma classe abstrata chamada Celula, assim os componentes podem ser instanciados todos numa ArrayList<Componente> e as células numa matriz de células.
+~~~java
+public class Dungeon extends JPanel implements ActionListener, KeyListener{
+	...
+	private Player player;
+	private ArrayList<Componente> componentes;
+	private Celula[][] celulas;
+	...
+	
+}
+~~~
+Porém, tanta as células como os componentes podem ser interagidos pelo player, por isso elas recebem uma interface Interactable para que seja garantido que elas possuam o método interactedByPlayer(...), que é chamado toda vez que o jogador tecla E. Na dungeon ela recebe um keyListener(...), no qual utiliza a classe Controlador que verifica qual tecla foi pressionada e no caso, se a tecla for E, ele chamará o método playerInteract() do Player que, por fim, aciona o método interactedByPlayer(...) nos componentes e células, exemplo: interagir com uma alavanca:
+	
+~~~java
+	public void playerInteract() {
+		
+		if(!this.alive) {
+			return;
+		}
+		
+		dungeon.getCells()[this.x][this.y].interactedByPlayer(this, dungeon.getComponentes(), dungeon.getCells());
+		for(Componente componente: dungeon.getComponentes()) {
+			if(componente.getX() == this.x && componente.getY() == this.y) {
+				componente.interactedByPlayer(this, dungeon.getComponentes(), dungeon.getCells());
+			}
+		}
+	}
+~~~
+~~~java
+	public void interactedByPlayer(Player player, ArrayList<Componente> componentes, Celula[][] celulas) {
+		this.puxada = !this.puxada;
+		if(this.puxada) {
+			loadImage("images/alavanca_para_baixo.png");
+		}else {
+			loadImage("images/alavanca_para_cima.png");
+		}
+		
+		for(Activable ativavel: ativaveis) {
+			System.out.println("fui ativada");
+			ativavel.setActivabled(!ativavel.getActivabled());
+		}
+	}
+~~~
+	
 
 # Destaques de Pattern
 
