@@ -79,8 +79,9 @@ A ArrayList<Position> pastPositions foi criada com os seguintes intuitos: retorn
 # Destaques de Orientação a Objetos
 
 ## Diagramas de Classes usada no destaque OO:
-No destaque de Orientação a Objetos, será apresentado como foi usado o polimorfismo na dungeon e nas interações entre componentes e o jogador.
-  
+No destaque de Orientação a Objetos, será apresentado como foi usado o polimorfismo na classe Dungeon e nas interações entre o player com os componentes e células.
+![Diagrama de interação com Player](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/InteracaoComPlayerDiagrama.png)
+
 ## Código do Destaque OO
 
 # Destaques de Pattern
