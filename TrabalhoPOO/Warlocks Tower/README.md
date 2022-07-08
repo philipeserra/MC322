@@ -129,6 +129,7 @@ Porém, tanta as células como os componentes podem ser interagidos pelo player,
 	
 
 # Destaques de Pattern
+	~~~
 
 ## Diagrama do Pattern
 
