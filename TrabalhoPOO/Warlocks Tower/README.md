@@ -129,11 +129,14 @@ Porém, tanta as células como os componentes podem ser interagidos pelo player,
 	
 
 # Destaques de Pattern
-Para o destaque de Pattern, será mostrado como foi utilizado o strategy pattern para a criação de componentes ativáveis pela alavanca e pelo piso acionador.
+Para o destaque de Pattern, será mostrado como foi utilizado o Strategy Pattern para a criação de componentes ativáveis pela alavanca e pelo piso acionador.
 
 ## Diagrama do Pattern
+![Diagrama de ativaveis](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/ActivablePattern.png)
 
 ## Código do Pattern
+Tanto a alavanca, como o piso acionador, recebem uma lista de Activable, que, como a tradução induz, uma lista de classes que podem ser ativadas. Como mostrado a seguir, a interface Activable possui dois métodos, nos quais serão declarados novamente dentro das classes para realizar o que se deseja caso a classe seja ativada ou desativada. Por conseguinte, o Strategy Pattern foi utilizado, pois não é necessário para a alavanca saber qual a classe que está sendo ativada para fazê-la agir da forma que queremos. o Strategy também foi usada na lógica de interação do player com os componentes e células, pois o player não precisa saber qual a classe do componente ou a classe da celula para fazermos as tais classes agirem da forma que queremos.
+
 
 # Conclusões e Trabalhos Futuros
 
