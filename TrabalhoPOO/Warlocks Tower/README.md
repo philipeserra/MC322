@@ -77,9 +77,9 @@ public class Caixa extends Componente{
 A ArrayList<Position> pastPositions foi criada com os seguintes intuitos: retornar o player para um lugar válido caso ele saia do tabuleiro ou entre em uma parede e (caso houvesse mais tempo) criar animações de caminhar, por exemplo: caso a posição passada do player fosse a esquerda da atual, ele estaria virado como se estivesse olhando para direita. Infelizmente a animação não foi feita, porém foi util para poder criar a movimentação da caixa, no qual poderia saber em qual direção ela foi empurrada pelo player.
 
 # Destaques de Orientação a Objetos
-
-## Diagramas de Classes usada no destaque OO:
 No destaque de Orientação a Objetos, será apresentado como foi usado o polimorfismo na classe Dungeon e nas interações entre o player com os componentes e células.
+	
+## Diagramas de Classes usada no destaque OO:
 ![Diagrama de interação com Player](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/InteracaoComPlayerDiagrama.png)
 
 ## Código do Destaque OO
@@ -129,7 +129,7 @@ Porém, tanta as células como os componentes podem ser interagidos pelo player,
 	
 
 # Destaques de Pattern
-	~~~
+Para o destaque de Pattern, será mostrado como foi utilizado o strategy pattern para a criação de componentes ativáveis pela alavanca e pelo piso acionador.
 
 ## Diagrama do Pattern
 
