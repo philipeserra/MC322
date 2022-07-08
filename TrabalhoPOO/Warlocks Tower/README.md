@@ -27,11 +27,38 @@ Em Warlock’s Tower 2, o jogador deve completar puzzles para encontrar a saída
 
 # Destaques de Pattern
 
-## Diagramas
+## Diagrama do Pattern
+
+## Código do Pattern
+
+# Conclusões e Trabalhos Futuros
+
+# Documentação dos Componentes
+
+# Diagramas
+
+## Diagrama Geral da Arquitetura do Jogo
 
 ### Arquitetura Simplificada
 ![Diagrama de Arquitetura Simplificado](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/ArquiteturaSimplificada.png)
 
-
 ### Arquitetura dos Componentes e Células Simplificadas
 ![Diagrama de Arquitetura Simplificado](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/ArquiteturaComponentesSimplificada.png)
+
+## Diagrama Geral de Componentes
+
+## Componente <Nome do Componente> (para cada componente)
+
+### Ficha Técnica
+
+### Interfaces
+
+## Detalhamento das interfaces
+
+### Ficha técnica
+
+# Plano de Exceções
+
+## Descrição das classes de exceção
+
+
