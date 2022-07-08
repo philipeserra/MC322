@@ -67,6 +67,10 @@ public class Caixa extends Componente{
 
 		
 		if(player.getX() == this.x && player.getY() == this.y) {
+			//Metodo que move a caixa, note que deltaX = player.getX()-player.getPastPosition().getX() indica para qual direção ele se moveu no
+			//eixo x ou se não se moveu nesse eixo (se deltaX = 1, ele foi para direita, se -1 para a esquerda e 0 ele não se moveu no eixo), 
+			//o mesmo ocorre com player.getY()-player.getPastPosition().getY() (se deltaY = 1, ele foi para cima, se -1 para a baixo e 0 ele não 
+			//se moveu no eixo).
 			move(player.getX()-player.getPastPosition().getX(), player.getY()-player.getPastPosition().getY(), componentes, celulas);
 	
 			
