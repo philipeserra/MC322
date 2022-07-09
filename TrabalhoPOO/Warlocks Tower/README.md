@@ -378,7 +378,11 @@ Método | Objetivo
 
 
 # Plano de Exceções
-
+Diagrama de exceções para impedir que fases que não tenham sido bem formatadas acabem impendido do jogador de avançar para a próxima fase ou de alguma forma quebrar/crashar o jogo
+![Diagrama de exceções no montador](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/DiagramaDeExce%C3%A7%C3%B5es.png)
+			
 ## Descrição das classes de exceção
-
+Classe | Descrição
+----- | -----
+badFormatLevel | Cria uma fase de passagem ao invés de criar a fase que está quebrada
 
