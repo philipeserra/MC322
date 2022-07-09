@@ -216,12 +216,7 @@ Um dos pontos mais fortes do código de Warlock's Tower 2 é a possibilidade de 
 # Diagramas
 
 ## Diagrama Geral da Arquitetura do Jogo
-
-### Arquitetura Simplificada
-![Diagrama de Arquitetura Simplificado](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/ArquiteturaSimplificada.png)
-
-### Arquitetura dos Componentes e Células Simplificadas
-![Diagrama de Arquitetura Simplificado](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/ArquiteturaComponentesSimplificada.png)
+![Diagrama Geral](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/DiagramaGeral.png)
 
 ## Diagrama Geral de Componentes
 
