@@ -358,6 +358,23 @@ Método | Objetivo
 `interactedByPlayer` | `Método chamado quando o player interage com o objeto`
 
 
+### Interface Activable
+Interface provida para classes que possuem uma propriedade que pode ser ativada por outras classes.
+			
+~~~java
+public interface Activable{
+	
+	public boolean getActivabled();
+	
+	public void setActivabled(boolean activabled);
+	
+}
+~~~
+			
+Método | Objetivo
+----- | -----
+`getActivabled` | `retorna se a classe teve uma de suas propriedades ativadas` 
+`setActivabled` | `ativa ou desativa a tal propriedade ativável dentro da classe`
 
 
 # Plano de Exceções
