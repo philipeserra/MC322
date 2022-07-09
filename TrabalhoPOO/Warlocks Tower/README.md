@@ -222,10 +222,105 @@ na dungeon é instanciado o player, os componentes, a matriz de células, o mont
 
 ## Diagrama Geral de Componentes
 
-## Componente <Nome do Componente> (para cada componente)
+## Componente Player
+			
+item | detalhamento
+----- | -----
+Classe | `Player` 
+Interfaces | ``
+			
+## Componente Dungeon
+			
+item | detalhamento
+----- | -----
+Classe | `Dungeon` 
+Interfaces | ``		
 
-### Ficha Técnica
+## Componente Controlador
+			
+item | detalhamento
+----- | -----
+Classe | `Controlador` 
+Interfaces | ``
 
+## Componente Montador
+			
+item | detalhamento
+----- | -----
+Classe | `Montador` 
+Interfaces | ``
+			
+## Componente Componente
+			
+item | detalhamento
+----- | -----
+Classe | `Componente` 
+Interfaces | `Interactable`
+
+## Componente Porta
+			
+item | detalhamento
+----- | -----
+Classe | `Porta` 
+Interfaces | `Interactable, Activable`
+
+			
+## Componente Alavanca
+			
+item | detalhamento
+----- | -----
+Classe | `Alavanca` 
+Interfaces | `Interactable`
+			
+## Componente Caixa
+			
+item | detalhamento
+----- | -----
+Classe | `Caixa` 
+Interfaces | `Interactable`
+
+## Componente Energia
+			
+item | detalhamento
+----- | -----
+Classe | `Energia` 
+Interfaces | `Interactable`
+			
+## Componente Celula
+			
+item | detalhamento
+----- | -----
+Classe | `Celula` 
+Interfaces | `Interactable`
+
+## Componente CelulaPadrao
+			
+item | detalhamento
+----- | -----
+Classe | `CelulaPadrao` 
+Interfaces | `Interactable`
+			
+## Componente Saida
+			
+item | detalhamento
+----- | -----
+Classe | `Saida` 
+Interfaces | `Interactable`
+
+## Componente Parede
+			
+item | detalhamento
+----- | -----
+Classe | `Parede` 
+Interfaces | `Interactable`
+
+## Componente PisoAcionador
+			
+item | detalhamento
+----- | -----
+Classe | `PisoAcionador` 
+Interfaces | `Interactable`		
+			
 ### Interfaces
 
 ## Detalhamento das interfaces
