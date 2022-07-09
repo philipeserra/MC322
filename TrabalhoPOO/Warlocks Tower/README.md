@@ -227,28 +227,28 @@ na dungeon é instanciado o player, os componentes, a matriz de células, o mont
 item | detalhamento
 ----- | -----
 Classe | `Player` 
-Interfaces | ``
+Interfaces | 
 			
 ## Componente Dungeon
 			
 item | detalhamento
 ----- | -----
 Classe | `Dungeon` 
-Interfaces | ``		
+Interfaces | 	
 
 ## Componente Controlador
 			
 item | detalhamento
 ----- | -----
 Classe | `Controlador` 
-Interfaces | ``
+Interfaces | 
 
 ## Componente Montador
 			
 item | detalhamento
 ----- | -----
 Classe | `Montador` 
-Interfaces | ``
+Interfaces | 
 			
 ## Componente Componente
 			
@@ -325,7 +325,40 @@ Interfaces | `Interactable`
 
 ## Detalhamento das interfaces
 
-### Ficha técnica
+### interface Interactable
+interface provida para qualquer classe que possa interagir com outras classes que implementam Interactable e que possa ser interagida pelo player.
+
+~~~java
+import java.awt.Graphics;
+import java.awt.image.ImageObserver;
+import java.util.ArrayList;
+
+//Interface para as celulas e componentes
+public interface Interactable {
+	
+	//Funcao tick impede do Player, componente ou celula estar onde nao deveria estar.
+	public void tick( Player player, ArrayList<Componente> componentes, Celula[][] celulas);
+	
+	//Faz a interecao com o player, componentes e celulas na Dungeon
+	public void interact(Player player, ArrayList<Componente> componentes, Celula[][] celulas);
+	
+	//Desenha o objeto
+	public void draw(Graphics g, ImageObserver observer);
+	
+	//Funcao ativada caso algo seja interagido player 
+	public void interactedByPlayer(Player player, ArrayList<Componente> componentes, Celula[][] celulas);
+}
+~~~
+
+Método | Objetivo
+----- | -----
+`tick` | `Verifica se o objeto se moveu para algum lugar que não deveria e, caso tenha, ele retorna o objeto a um lugar possível` 
+`interact` | `Objeto interage com componentes, células e o player sem a necessidade de ser interagido pelo player`
+`draw` | `Desenha o objeto no painel`
+`interactedByPlayer` | `Método chamado quando o player interage com o objeto`
+
+
+
 
 # Plano de Exceções
 
