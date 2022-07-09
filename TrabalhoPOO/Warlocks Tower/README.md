@@ -216,6 +216,8 @@ Um dos pontos mais fortes do código de Warlock's Tower 2 é a possibilidade de 
 # Diagramas
 
 ## Diagrama Geral da Arquitetura do Jogo
+A classe App é a classe que possui a função main que serve para a execução do jogo, no método initWindow, a dungeon é instanciada e a partir de agora todas as atualizações de frame serão executadas dentro do objeto dungeon.
+na dungeon é instanciado o player, os componentes, a matriz de células, o montador e o controlador. O montador possui métodos para a criação do player, dos componentes e da matriz de células, funcionando apenas como uma classe Facade. O controlador receberá o player como paramêtro para que ele execute os seus métodos. Usando o método actionPerfomed(), a dungeon avisará para o player conferir se ele está em uma localização possível, depois pedirá que todos os componentes e células interajam entre si e depois atualizará o frame. Usando a interface Interactable, o player consegue se comunicar com os componentes e células instanciados e os componentes e células podem comunicar entre si para realizar ações
 ![Diagrama Geral](https://github.com/philipeserra/MC322/blob/main/TrabalhoPOO/Diagramas/DiagramaGeral.png)
 
 ## Diagrama Geral de Componentes
