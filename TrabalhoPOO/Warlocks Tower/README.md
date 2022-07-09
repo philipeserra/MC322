@@ -320,8 +320,6 @@ item | detalhamento
 ----- | -----
 Classe | `PisoAcionador` 
 Interfaces | `Interactable`		
-			
-### Interfaces
 
 ## Detalhamento das interfaces
 
